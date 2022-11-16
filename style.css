@@ -1,0 +1,36 @@
+.main *{
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.main{
+background-color: blue;
+
+width: auto;
+height: 97.5vh;
+
+display: grid;
+grid-template-columns: 1fr 6fr;
+}
+
+.sidebar{
+background-color: red;
+color: white;
+display: grid;
+grid-template-rows: 1fr 10fr;
+}
+
+.right-side{
+background-color: white;
+display: grid;
+grid-template-rows: 1fr 4fr;
+}
+
+.header{
+
+}
+
+.content{
+
+}
