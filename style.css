@@ -1,24 +1,43 @@
 .main *{
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-collapse: collapse;
+box-sizing: border-box;
+border: 1px solid blue;
+border-collapse: collapse;
 }
 
 .main{
-background-color: blue;
+background-color: yellow;
 
 width: auto;
 height: 97.5vh;
 
 display: grid;
 grid-template-columns: 1fr 6fr;
+gap:10px;
 }
 
 .sidebar{
 background-color: red;
 color: white;
 display: grid;
-grid-template-rows: 1fr 10fr;
+grid-template-rows: 1fr 5fr 5fr;
+gap: 10px;
+}
+
+.logo{
+display: grid;
+grid-template-columns: 1fr 3fr;
+font-size: 28px;
+text-align: center;
+place-items: center;
+}
+
+.hyperlinks-top ul,
+.hyperlinks-bottom ul{
+display: grid;
+gap: 20px;
+place-content: center;
+list-style: none;
+padding: 0;
 }
 
 .right-side{
@@ -28,7 +47,50 @@ grid-template-rows: 1fr 4fr;
 }
 
 .header{
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+.header-top{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
 
+.search-bar{
+display: grid;
+grid-template-columns: 1fr 4fr;
+align-items: center;
+}
+
+.search-bar input{
+background-color: rgb(173, 169, 169);
+height: 50%;
+border-radius: 5px;
+}
+
+.user-profile{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+}
+
+.header-bottom{
+display: grid;
+grid-template-columns: 1fr 4fr;
+gap:40%;
+align-items: center;
+}
+
+.avatar-n-greeting{
+margin-left: 20%;
+}
+
+.buttons-header{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+height: 50%;
+
+place-items: center;
 }
 
 .content{
